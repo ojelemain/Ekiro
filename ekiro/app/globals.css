@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ekiti-green: #005826;
+  --ekiti-gold: #d4af37;
+  --ekiti-neutral: #0a1a10;
+  --ekiti-canvas: #f4f7f5;
+}
+
+html,
+body {
+  background-color: var(--ekiti-canvas);
+  color: var(--ekiti-neutral);
+  font-family: "Public Sans", Arial, sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+/* Visible keyboard focus for accessibility */
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--ekiti-gold);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+.geofence-grid {
+  background-image: linear-gradient(rgba(212, 175, 55, 0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 175, 55, 0.18) 1px, transparent 1px);
+  background-size: 40px 40px;
+}

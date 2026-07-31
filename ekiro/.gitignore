@@ -1,0 +1,15 @@
+# Next.js
+.next/
+out/
+node_modules/
+.env*.local
+.vercel
+
+# Backend (has its own .gitignore too, this covers root-level tooling)
+backend/node_modules/
+backend/dist/
+backend/.env
+
+# Misc
+.DS_Store
+*.log
